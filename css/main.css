@@ -10,6 +10,7 @@ Header Styles
 
 .main-header {
   margin: 2em;
+  margin-bottom: 1em;
 }
 
 .top-nav {
@@ -19,14 +20,14 @@ Header Styles
 
 .fa-user {
   margin-left: .5em;
-  font-size: 1.5em;
+  font-size: 1.75em;
   color: #6f1e0b;
 }
 
-.fa-search {
+button {
   background-color: #6f1e0b;
   color: #fff;
-  padding: 5px;
+  border: none;
 }
 
 #search {
@@ -39,7 +40,7 @@ Header Styles
 }
 
 .logo {
-  color: #531708;
+  color: #6f1e0b;
   text-align: center;
   margin: 0 0 2% 0;
   padding-bottom: .25em;
@@ -56,6 +57,7 @@ Header Styles
 .logo p {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: .9em;
 }
 
 .main-nav {
@@ -74,8 +76,8 @@ Header Styles
 .main-nav li:hover,
 .main-nav li:focus {
   font-weight: bold;
-  color: #ffb445;
-  background-color: #94290f;
+  color: #fff;
+  background-color: #6f1e0b;
 }
 
 /**********************************
@@ -92,7 +94,7 @@ Main Content Styles
 }
 
 h2 {
-  color: #94290f;
+  color: #6f1e0b;
 }
 
 /**********************************
@@ -136,4 +138,9 @@ footer {
   border: 1px solid #fff;
   padding: 3%;
   border-radius: 50%;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 2%;
 }
