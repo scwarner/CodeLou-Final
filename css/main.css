@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+/**************
+Header Styles
+**************/
+
+.main-header {
+  margin: 2em;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-user {
+  margin-left: .5em;
+  font-size: 1.5em;
+  color: #6f1e0b;
+}
+
+.fa-search {
+  background-color: #6f1e0b;
+  color: #fff;
+  padding: 5px;
+}
+
+#search {
+  display: none;
+}
+
+.main-header a {
+  color: #6f1e0b;
+  text-decoration: none;
+}
+
+.logo {
+  color: #531708;
+  text-align: center;
+  margin: 0 0 2% 0;
+  padding-bottom: .25em;
+
+}
+
+.logo h1 {
+  font-size: 6em;
+  font-family: 'Limelight',cursive;
+  margin-bottom: -10px;
+  margin-top: 30px;
+}
+
+.logo p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  padding: 3%;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.main-nav li:hover,
+.main-nav li:focus {
+  font-weight: bold;
+  color: #ffb445;
+  background-color: #94290f;
+}
+
+/**********************************
+Main Content Styles
+***********************************/
+
+.wrapper {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.main {
+  margin: 0 2% 10% 2%;
+}
+
+h2 {
+  color: #94290f;
+}
+
+/**********************************
+Home Page Styles
+***********************************/
+.home img {
+  width: 100%;
+}
+
+/****************************
+Footer Styles
+*****************************/
+footer {
+  background-color: #6f1e0b;
+  color: #fff;
+  padding: 5%;
+  margin: 0;
+}
+
+.bottom-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.bottom-nav li {
+  flex-grow: 1;
+  padding: 2%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3%;
+  padding-top: 0;
+}
+
+.social-media .fa {
+  border: 1px solid #fff;
+  padding: 3%;
+  border-radius: 50%;
+}
