@@ -24,13 +24,17 @@ Header Styles
   color: #6f1e0b;
 }
 
-button {
+#search-button {
   background-color: #6f1e0b;
   color: #fff;
   border: none;
 }
 
-#search {
+#search-bar {
+  border: 1px solid #6f1e0b;
+}
+
+.hideme {
   display: none;
 }
 
