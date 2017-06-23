@@ -32,6 +32,7 @@ Header Styles
 
 #search-bar {
   border: 1px solid #6f1e0b;
+  padding: 1%;
 }
 
 .hideme {
@@ -89,7 +90,7 @@ Main Content Styles
 ***********************************/
 
 .wrapper {
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -99,13 +100,6 @@ Main Content Styles
 
 h2 {
   color: #6f1e0b;
-}
-
-/**********************************
-Home Page Styles
-***********************************/
-.home img {
-  width: 100%;
 }
 
 /****************************
@@ -121,13 +115,17 @@ footer {
 .bottom-nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 3%;
+}
+
+.bottom-nav ul a {
+  color: #fff;
 }
 
 .bottom-nav li {
   flex-grow: 1;
-  padding: 2%;
+  padding: 4%;
 }
 
 .social-media {
@@ -140,11 +138,42 @@ footer {
 
 .social-media .fa {
   border: 1px solid #fff;
-  padding: 3%;
+  padding: 4%;
   border-radius: 50%;
+  font-size: 1.15em;
 }
 
 footer p {
   text-align: center;
   padding-top: 2%;
+}
+
+/*********************************
+INDIVIDUAL PAGE STYLES
+*********************************/
+
+/**********************************
+Home Page
+***********************************/
+.home img {
+  width: 100%;
+}
+
+/***********************************
+About Page
+***********************************/
+.mission,
+.history {
+  margin-bottom: 5%;
+}
+
+.group-pic {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+hr {
+  border-style: solid;
+  border-color: #6f1e0b;
+  border-width: 1px 0 0 0;
 }
