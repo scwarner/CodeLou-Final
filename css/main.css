@@ -1,7 +1,16 @@
+/***********************
+UNIVERSAL STYLES
+***********************/
+
 body {
   margin: 0;
   font-size: 16px;
   font-family: 'Open-Sans', sans-serif;
+}
+
+a {
+  color: #6f1e0b;
+  text-decoration: none;
 }
 
 /**************
@@ -39,10 +48,6 @@ Header Styles
   display: none;
 }
 
-.main-header a {
-  color: #6f1e0b;
-  text-decoration: none;
-}
 
 .logo {
   color: #6f1e0b;
@@ -170,10 +175,24 @@ About Page
 .group-pic {
   width: 100%;
   border: 1px solid #000;
+  margin-bottom: 5%;
+}
+
+.about h3 {
+  font-size: 20px;
+  color: #6f1e0b;
 }
 
 hr {
   border-style: solid;
   border-color: #6f1e0b;
   border-width: 1px 0 0 0;
+}
+
+/*************************
+Concert Page
+*************************/
+
+#concert-pic {
+  width: 100%;
 }
