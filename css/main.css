@@ -78,9 +78,12 @@ Header Styles
 
 .main-nav li {
   text-transform: uppercase;
-  padding: 3%;
+  padding: 5%;
   text-align: center;
   line-height: 1.25;
+  border: 2px solid #6f1e0b;
+  border-radius: 25%;
+  margin: 3% 5%;
 }
 
 .main-nav li:hover,
@@ -88,6 +91,7 @@ Header Styles
   font-weight: bold;
   color: #fff;
   background-color: #6f1e0b;
+  text-decoration: none;
 }
 
 /**********************************
@@ -195,4 +199,40 @@ Concert Page
 
 #concert-pic {
   width: 100%;
+  border: 2px solid #000;
+  margin-bottom: 5%;
+}
+
+table {
+  font-size: .8em;
+  border: 1px solid #6f1e0b;
+  padding: 5px;
+  width: 100%;
+}
+
+caption {
+  font-size: 2em;
+  color: #6f1e0b;
+}
+
+td,
+th {
+  border-bottom: 1px solid #6f1e0b;
+  padding: 10px;
+  text-align: left;
+
+}
+th {
+  background-color: #6f1e0b;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 180, 69, 0.5);
+}
+
+.time {
+  display: none;
 }
