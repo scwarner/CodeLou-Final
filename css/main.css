@@ -88,7 +88,7 @@ Header Styles
 
 .main-nav li {
   text-transform: uppercase;
-  padding: 5%;
+  padding: 3% 5%;
   text-align: center;
   line-height: 1.25;
   border: 2px solid #6f1e0b;
@@ -217,7 +217,7 @@ Concert Page
 
 table {
   font-size: .8em;
-  border: 1px solid #6f1e0b;
+/*  border: 1px solid #6f1e0b; */
   padding: 5px;
   width: 100%;
 }
@@ -229,16 +229,29 @@ caption {
 
 td,
 th {
-  border-bottom: 1px solid #6f1e0b;
   padding: 10px;
   text-align: left;
 
 }
+
 th {
   background-color: #6f1e0b;
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
+  padding-right: 2%;
+}
+
+td {
+  border: 1px solid #6f1e0b;
 }
 
 tbody tr:nth-child(even) {
