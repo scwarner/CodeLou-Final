@@ -13,6 +13,16 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  text-decoration: none;
+  color: #6f1e0b;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #6f1e0b;
+}
+
 h3 {
   font-size: 20px;
   color: #6f1e0b;
@@ -75,7 +85,8 @@ Header Styles
   font-size: .9em;
 }
 
-.logo a:focus {
+.logo a:focus,
+.logo a:hover {
   color: #6f1e0b;
   text-decoration: none;
 }
@@ -93,17 +104,14 @@ Header Styles
   line-height: 1.25;
   border: 2px solid #6f1e0b;
   margin: 2% 10%;
+  border-radius: 7px;
 }
 
 .main-nav li:hover,
 .main-nav li:focus {
   font-weight: bold;
   color: #fff;
-  background-color: #6f1e0b;
-}
-
-.main-nav li a:focus {
-  text-decoration: none;
+  background-color: #ff904C;
 }
 
 /**********************************
@@ -220,6 +228,7 @@ table {
 /*  border: 1px solid #6f1e0b; */
   padding: 5px;
   width: 100%;
+  margin-bottom: 3%;
 }
 
 caption {
@@ -254,10 +263,37 @@ td {
   border: 1px solid #6f1e0b;
 }
 
+ tbody tr {
+  opacity: 0.85;
+}
+
+tbody tr:hover {
+  opacity: 1.0;
+  font-weight: 700;
+}
+
+
 tbody tr:nth-child(even) {
-  background-color: rgba(255, 180, 69, 0.5);
+  background-color: #ff904C;
 }
 
 .time {
   display: none;
+}
+
+.free-shows,
+.local-shows {
+  background-color: #fff;
+  color: #6f130b;
+  border: 2px solid #6f130b;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.free-shows {
+  margin-right: 3%;
+}
+
+aside {
+  margin-top: 10%;
 }
