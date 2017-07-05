@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Louisville Mandolin Orchestra | Home</title>
+      <title>Louisville Mandolin Orchestra | Contact</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans:400,700" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css">
-    </head>
+  </head>
     <body>
       <header class="main-header">
         <div class="top-nav">
@@ -32,13 +27,13 @@
             <a href="about.html"><li>About</li></a>
             <a href="concerts.html"><li>Concerts</li></a>
             <a href="join.html"><li>Join</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <a href="contact.html"><li class="active">Contact</li></a>
           </ul>
         </nav>
       </header>
       <div class="wrapper">
         <main class="main contact">
-          <form class="" action="index.html" method="post">
+          <form class="contact-form" action="contact.html" method="post">
             <h2>Contact Us</h2>
             <fieldset>
             <label for="name">Name: </label>
@@ -59,20 +54,20 @@
                 <option value="bass">Bass</option>
                 <option value="guitar">Guitar</option>
               </select>
-              <label>Years of experience:</label>
-              <input type="radio" name="years" value=">1" id="under-1"><label for="under-1">Less than 1</label>
-              <input type="radio" name="years" value="1-5" id="over-1"><label for="over-1">1 to 5</label>
-              <input type="radio" name="years" value="5-10" id="over-5"><label for="over-5">5 to 10</label>
+              <label>Years of experience:</label><br>
+              <input type="radio" name="years" value=">1" id="under-1"><label for="under-1">Less than 1</label><br>
+              <input type="radio" name="years" value="1-5" id="over-1"><label for="over-1">1 to 5</label><br>
+              <input type="radio" name="years" value="5-10" id="over-5"><label for="over-5">5 to 10</label><br>
               <input type="radio" name="years" value="<10" id="over-10"><label for="over-10">More than 10</label>
             </div>
             </fieldset>
             <fieldset>
               <input type="checkbox" name="give" id="give"><label for="give">I'd like to donate to the LMO</label>
-              <p id="donation-field">Mail your tax-deductible contribution to P.O. Box 55, Louisville, KY 40201</p>
+              <p id="donation-field">The Louisville Mandolin Orchestra is a 501c(3) organization and relies on charitable funding. Mail your tax-deductible contribution to P.O. Box 55, Louisville, KY 40201</p>
             </fieldset>
             <fieldset>
               <input type="checkbox" name="hire" id="hire"><label for="hire">I'd like to hire the LMO</label>
-              <div class="hire-field">
+              <div id="hire-field">
                 <p>List details below, including requested time, date and venue.</p>
                 <textarea name="event" rows="8" cols="35"></textarea>
             </div>
@@ -80,7 +75,7 @@
             <fieldset>
               <h3>Comments</h3>
               <textarea name="comments" rows="8" cols="35"></textarea>
-            </fieldset>  
+            </fieldset>
               <button type="submit" name="button" id="submit-button">Submit</button>
           </form>
         </main>

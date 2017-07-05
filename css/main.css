@@ -63,7 +63,6 @@ Header Styles
   display: none;
 }
 
-
 .logo {
   color: #6f1e0b;
   text-align: center;
@@ -74,7 +73,7 @@ Header Styles
 
 .logo h1 {
   font-size: 6em;
-  font-family: 'Limelight',cursive;
+  font-family: 'Limelight', cursive;
   margin-bottom: -10px;
   margin-top: 30px;
 }
@@ -108,10 +107,13 @@ Header Styles
 }
 
 .main-nav li:hover,
-.main-nav li:focus {
+.main-nav li:focus,
+.active {
   font-weight: bold;
   color: #fff;
-  background-color: #ff904C;
+  background-color: #ea5532;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px #080808;
 }
 
 /**********************************
@@ -264,7 +266,7 @@ td {
 }
 
  tbody tr {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 tbody tr:hover {
@@ -274,7 +276,8 @@ tbody tr:hover {
 
 
 tbody tr:nth-child(even) {
-  background-color: #ff904C;
+  background-color: #ea5532;
+  color: #fff;
 }
 
 .time {
@@ -296,4 +299,54 @@ tbody tr:nth-child(even) {
 
 aside {
   margin-top: 10%;
+}
+
+/*****************************************
+CONTACT PAGE
+****************************************/
+fieldset {
+  border: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  border-radius: 2px;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 2%;
+}
+
+label {
+  color: #6f1e0b;
+}
+
+#join-field {
+  display: none;
+}
+
+#hire-field {
+  display: none;
+}
+
+#donation-field {
+  display: none;
+}
+
+#submit-button {
+  background-color: #fff;
+  color: #6f130b;
+  border: 2px solid #6f130b;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+#submit-button:hover,
+#submit-button:focus {
+  background-color: #6f1e0b;
+  color: #fff;
+  font-weight:700;
 }
