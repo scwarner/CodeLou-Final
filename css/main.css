@@ -114,7 +114,17 @@ Header Styles
   color: #fff;
   background-color: #ea5532;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 2px #080808;
+  text-shadow: 1px 1px 1px #080808;
+}
+
+.main-nav a {
+  padding: 0 30%;
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.active a {
+  color: #fff;
 }
 
 /**********************************
@@ -320,6 +330,12 @@ aside {
 /*****************************************
 CONTACT PAGE
 ****************************************/
+form {
+  border: 5px solid #ea5532;
+  border-radius: 5px;
+  padding: 2%;
+}
+
 fieldset {
   border: none;
 }
@@ -338,6 +354,12 @@ input[type="radio"] {
 
 label {
   color: #6f1e0b;
+  font-weight: 400;
+  font-size: 1.15em;
+}
+
+.contact h3 {
+  font-weight: 700;
 }
 
 .contact span {

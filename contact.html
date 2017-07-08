@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="css/main.css">
   </head>
     <body>
+
       <header class="main-header">
         <div class="top-nav">
           <input type="text" id="search-bar" class="hideme" name="search-bar" placeholder="Search">
@@ -24,18 +25,21 @@
         </div>
         <nav class="main-nav">
           <ul>
-            <a href="about.html"><li>About</li></a>
-            <a href="concerts.html"><li>Concerts</li></a>
-            <a href="join.html"><li>Join</li></a>
-            <a href="contact.html"><li class="active">Contact</li></a>
+            <li><a href="about.html">About</a></li>
+            <li><a href="concerts.html">Concerts</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
+
       <div class="wrapper">
         <main class="main contact">
+          <h2>Get in Touch</h2>
+          <p class="intro">We would love to hear from you. The best way is to fill out the form below. We will respond within the next business day. If you prefer to contact us the old-fashioned way, send correspondence to P.0. Box 55, Louisville, KY, 40201 </p>
           <form class="contact-form" action="contact.html" method="post">
-            <h2>Contact Us</h2>
             <fieldset>
+            <h3>Contact information</h3>
             <label for="name">Name<span>*</span></label>
             <input type="text" name="name" id="name" placeholder="Name" required>
             <label for="email">Email<span>*</span></label>
@@ -76,17 +80,21 @@
               <h3>Comments</h3>
               <textarea name="comments" rows="8" cols="35"></textarea>
             </fieldset>
+            <fieldset>
               <button type="submit" name="button" id="submit-button">Submit</button>
+            </fieldset>
+
           </form>
         </main>
       </div>
+
       <footer>
         <div class="bottom-nav">
           <ul>
-            <a href="about.html"><li>About</li></a>
-            <a href="media.html"><li>Media</li></a>
-            <a href="support.html"><li>Support</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <li><a href="about.html">About</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="social-media">
@@ -96,6 +104,7 @@
         </div>
         <p>&copy; 2017 Louisville Mandolin Orchestra</p>
       </footer>
+
       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="js/lmo.js"></script>
