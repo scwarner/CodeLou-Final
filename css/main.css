@@ -92,8 +92,8 @@ Header Styles
 }
 
 .main-nav {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
   margin-bottom: 20px;
 }
 
@@ -192,14 +192,6 @@ footer {
   border: 1px solid #6f1e0b;
 }
 
-/*
-.social-media .fa {
-  border: 1px solid #fff;
-  padding: 4%;
-  border-radius: 50%;
-  font-size: 1.15em;
-}
-*/
 footer p {
   text-align: center;
   padding-top: 2%;
@@ -395,4 +387,35 @@ label {
   background-color: #6f1e0b;
   color: #fff;
   font-weight:700;
+}
+
+
+
+
+@media (min-width: 750px) {
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav li {
+    border: none;
+    margin: 0;
+    padding: 0%;
+  }
+
+  .main-nav li:hover,
+  .main-nav li:focus,
+  .active {
+    background: #fff;
+    color: #6f1e0b;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  .main-nav li a:hover,
+  .main-nav li a:focus,
+  .active a {
+    color: #6f1e0b;
+  }
 }
