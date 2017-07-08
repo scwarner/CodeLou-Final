@@ -330,6 +330,10 @@ aside {
 /*****************************************
 CONTACT PAGE
 ****************************************/
+.intro {
+  margin-bottom: 10%;
+}
+
 form {
   border: 5px solid #ea5532;
   border-radius: 5px;

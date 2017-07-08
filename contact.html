@@ -37,7 +37,7 @@
         <main class="main contact">
           <h2>Get in Touch</h2>
           <p class="intro">We would love to hear from you. The best way is to fill out the form below. We will respond within the next business day. If you prefer to contact us the old-fashioned way, send correspondence to P.0. Box 55, Louisville, KY, 40201 </p>
-          <form class="contact-form" action="contact.html" method="post">
+          <form class="contact-form">
             <fieldset>
             <h3>Contact information</h3>
             <label for="name">Name<span>*</span></label>
@@ -81,10 +81,24 @@
               <textarea name="comments" rows="8" cols="35"></textarea>
             </fieldset>
             <fieldset>
-              <button type="submit" name="button" id="submit-button">Submit</button>
+              <button type="button" name="button" id="submit-button" data-toggle="modal" data-target="#buttonModal">Submit</button>
             </fieldset>
-
           </form>
+
+          <div class="modal fade" id="buttonModal" role="dialog" aria-labelledby="buttonModalLabel">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">We're sorry!</h4>
+                </div>
+                <div class="modal-body">
+                  <p>This feature is not yet performance ready. Please check back later.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </main>
       </div>
 
