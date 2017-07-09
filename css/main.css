@@ -393,6 +393,10 @@ label {
 
 
 @media (min-width: 750px) {
+  /*****************
+  Header Styles
+  *****************/
+
   .main-nav ul {
     display: flex;
     justify-content: center;
@@ -418,4 +422,74 @@ label {
   .active a {
     color: #6f1e0b;
   }
+
+  .logo h1 {
+    font-size: 7.5em;
+  }
+
+  .logo p {
+    font-size: 1em;
+  }
+
+  .main-nav li {
+    font-size: 1.15em;
+  }
+
+  .main-nav li a:hover,
+  .main-nav li a:focus,
+  .active a {
+    color: #ea5532;
+  }
+  /***************
+  Footer Styles
+  ***************/
+
+  footer {
+    padding: 0;
+  }
+
+  .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bottom-nav {
+    flex-grow: .25;
+  }
+
+  .social-media {
+    flex-grow: .25;
+    padding-top: 1%;
+  }
+
+  .social-media a {
+    font-size: 1em;
+    padding: 4% 5%;
+  }
+
+  footer p {
+    padding: 0;
+    padding-bottom: 2%;
+  }
+
+  /*****************
+  Main Content Styles
+  ******************/
+  .wrapper {
+    max-width: 85%;
+  }
+
+  hr {
+    display: none;
+  }
+
+  #roster {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 }
