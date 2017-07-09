@@ -204,7 +204,7 @@ INDIVIDUAL PAGE STYLES
 /**********************************
 Home Page
 ***********************************/
-.home img {
+.wrapper img {
   width: 100%;
 }
 
@@ -222,16 +222,21 @@ Home Page
 
 #subscribe-email {
   padding: 1%;
+  border: 1px solid #6f1e0b;
 }
 
 #subscribe-button {
   margin-left: 0;
+  margin-top: 2%;
   padding: 1% 2%;
   background: #6f1e0b;
   color: #fff;
   border: 0;
   font-weight: 700;
-  border-radius: 2px;
+}
+
+.fa-envelope {
+  margin-right: 5px;
 }
 
 /***********************************
@@ -265,7 +270,7 @@ Concert Page
 
 #concert-pic {
   width: 100%;
-  border: 2px solid #000;
+  border: 1px solid #000;
   margin-bottom: 5%;
 }
 
@@ -500,6 +505,27 @@ Tablet, Small Laptop Styles
   ******************/
   .wrapper {
     max-width: 85%;
+  }
+
+/*******************
+Home Page
+*******************/
+  .content {
+    display: flex;
+    margin: 5% 0;
+  }
+
+  .signup {
+    margin-top: 1%;
+    padding: 2%;
+  }
+
+  .home {
+    margin: 0 2% 0 0;
+  }
+
+  .home h2 {
+    margin-top: 1%;
   }
 
   hr {
