@@ -195,6 +195,7 @@ footer {
 footer p {
   text-align: center;
   padding-top: 2%;
+  margin-top: 0;
 }
 
 /*********************************
@@ -276,7 +277,6 @@ Concert Page
 
 table {
   font-size: .8em;
-/*  border: 1px solid #6f1e0b; */
   padding: 5px;
   width: 100%;
   margin-bottom: 3%;
@@ -287,11 +287,14 @@ caption {
   color: #6f1e0b;
 }
 
+tbody {
+    border: 1px solid #6f1e0b;
+}
+
 td,
 th {
   padding: 10px;
-  text-align: left;
-
+  text-align: left;d
 }
 
 th {
@@ -310,22 +313,12 @@ th:last-child {
   padding-right: 2%;
 }
 
-td {
-  border: 1px solid #6f1e0b;
+tbody tr {
+  border-bottom: 1px solid #6f1e0b;
 }
-/*
- tbody tr {
-  opacity: 0.9;
-}
-
-tbody tr:hover {
-  opacity: 1.0;
-  font-weight: 700;
-}
-*/
 
 tbody tr:nth-child(even) {
-  background-color: #d59e6a/*#ea5532*/;
+  background-color: #d59e6a;
   color: #fff;
 }
 
@@ -346,7 +339,7 @@ tbody tr:nth-child(even) {
   margin-right: 3%;
 }
 
-aside {
+.concerts aside {
   margin-top: 10%;
 }
 
@@ -358,7 +351,7 @@ CONTACT PAGE
 }
 
 form {
-  background: rgba(213,158,106,0.6);
+  background: rgba(213,158,106,0.8);
   border-radius: 5px;
   padding: 2%;
 }
@@ -512,12 +505,26 @@ Home Page
 *******************/
   .content {
     display: flex;
-    margin: 5% 0;
+    margin: 5% 0 2% 0;
   }
 
   .signup {
     margin-top: 1%;
+    padding: 3%;
+  }
+
+  .signup h3 {
+    margin-top: 5px;
+  }
+
+  #subscribe-email {
     padding: 2%;
+  }
+
+  #subscribe-button {
+    padding: 5%;
+    margin-top: 5%;
+    border-radius: 3px;
   }
 
   .home {
@@ -527,6 +534,10 @@ Home Page
   .home h2 {
     margin-top: 1%;
   }
+
+  /*********************
+  About
+  *********************/
 
   hr {
     display: none;
@@ -539,4 +550,46 @@ Home Page
     flex-wrap: wrap;
 }
 
+/************************
+Concerts
+************************/
+.concerts {
+  margin-bottom: 5%;
+}
+
+table {
+  font-size: 1em;
+  width: 95%;
+  margin-bottom: 2%;
+}
+
+tbody {
+  font-weight: 700;
+}
+
+.time {
+  display: block;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.free-shows,
+.local-shows {
+    padding: 1.5%;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.free-shows {
+  margin-right: 1%;
+}
+
+.hire {
+  margin: 5% 0;
+}
+
+.hire h3 {
+  font-size: 24px;
+}
 }

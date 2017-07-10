@@ -43,10 +43,25 @@
         <h3>Sign Up</h3>
         <p>Enter your email address to get our monthly e-newsletter directly in your inbox. Be the first to know about our upcoming performances!</p>
         <input type="email" name="subscribe" value="" placeholder="Email address" id="subscribe-email">
-        <button type="button" name="subscribe-button" id="subscribe-button"><i class="fa fa-envelope" aria-hidden="true"></i>Sign me up</button>
+        <button type="button" name="subscribe-button" id="subscribe-button" data-toggle="modal" data-target="#subscribeModal"><i class="fa fa-envelope" aria-hidden="true"></i>Sign me up</button>
       </aside>
     </div>
   </div>
+
+  <div class="modal fade" id="subscribeModal" role="dialog" aria-labelledby="buttonModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">We're sorry!</h4>
+        </div>
+        <div class="modal-body">
+          <p>This feature is not yet performance ready. Please check back later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="footer-wrap">
     <div class="bottom-nav">
