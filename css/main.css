@@ -19,11 +19,6 @@ a:hover {
   color: #6f1e0b;
 }
 
-/*a:hover {
-  text-decoration: none;
-  color: #6f1e0b;
-}*/
-
 h3 {
   font-size: 20px;
   color: #6f1e0b;
@@ -219,7 +214,7 @@ Home Page
 .signup h3 {
   color: #fff;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #6f1e0b;
+  text-shadow: 1px 1px 1px #000;
 }
 
 #subscribe-email {
@@ -329,9 +324,9 @@ tbody tr:nth-child(even) {
 
 .free-shows,
 .local-shows {
-  background-color: #fff;
-  color: #6f130b;
-  border: 2px solid #6f130b;
+  color: #fff;
+  background-color: #6f130b;
+  border: 1px solid #6f130b
   padding: 3%;
   border-radius: 5px;
 }
@@ -405,7 +400,7 @@ textarea {
 }
 
 #submit-button {
-  background-color: #fff;
+  background-color: inherit;
   color: #6f1e0b;
   border: 2px solid #6f1e0b;
   padding: 3%;
@@ -435,8 +430,8 @@ Tablet, Small Laptop Styles
 
   .main-nav li {
     border: none;
-    margin: 2%;
-    padding: 2%;
+    margin: 1%;
+    padding: 1%;
     font-size: 1.15em;
   }
 
@@ -453,6 +448,9 @@ Tablet, Small Laptop Styles
   .main-nav li a:focus,
   .active a {
     color: #d59e6a;
+    border: 1px solid #6f1e0b;
+    border-radius: 3px;
+    padding: 10%;
   }
 
   .logo h1 {
@@ -557,6 +555,7 @@ Home Page
   #mission h2 {
     color: #fff;
     font-weight: 700;
+    text-shadow: 1px 1px 1px #000;
   }
 
   #history {
@@ -624,7 +623,7 @@ tbody {
 Contact
 ************************/
 .intro {
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
 
 form {
@@ -637,4 +636,26 @@ form {
   font-weight: 700;
 }
 
+}
+
+/*************************
+Tablet, Small Laptop Styles
+*************************/
+
+@media (min-width: 1020px) {
+/*  .horizontal {
+    display: flex;
+  }*/
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .main-nav ul {
+    justify-content: flex-end;
+  }
+
+  .main-nav a {
+    padding: 0;
+  }
 }
