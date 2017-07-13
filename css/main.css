@@ -686,6 +686,25 @@ Laptop/Desktop Styles
     padding: 10%;
   }
 
+  /******************
+  Footer Styles
+  ******************/
+  .social-media {
+    padding: 0;
+  }
+
+  .social-media a {
+    padding: 2%;
+    padding-bottom: 0;
+  }
+
+  /*******************
+  Universal styles
+  *******************/
+  .wrapper {
+    width: 80%;
+  }
+
   /**********************
   Home Page Styles
   **********************/
@@ -714,9 +733,36 @@ Laptop/Desktop Styles
     flex: 2;
   }
 
+  table {
+    width: 100%;
+  }
+
   .concerts aside {
-    flex: 2;
+    flex: 1;
     margin-top: 0;
     font-size: 1.25em;
+  }
+
+  /*******************
+  Contact Page Styles
+  *******************/
+  .contact {
+    display: flex;
+  }
+
+  form {
+    flex: 2;
+    order: -1;
+    margin: 0;
+    max-width: 500px;
+  }
+
+  .intro {
+    flex: 1;
+    margin: 0 0 0 3%;
+  }
+
+  .intro h2 {
+    margin-top: 0;
   }
 }
