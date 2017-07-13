@@ -639,16 +639,37 @@ form {
 }
 
 /*************************
-Tablet, Small Laptop Styles
+Laptop/Desktop Styles
 *************************/
 
-@media (min-width: 1020px) {
-/*  .horizontal {
-    display: flex;
-  }*/
+@media (min-width: 999px) {
+
+  /********************
+  Header Styles
+  *********************/
+  .fa-search {
+    padding: 0 10%;
+    font-size: 1.25em;
+  }
+
+  .fa-user {
+    font-size: 2.25em;
+    margin-left: .25em;
+  }
+
+  .main-header {
+    margin: 5em;
+    margin-bottom: 2.5em;
+  }
+
   .logo {
     display: flex;
     justify-content: flex-start;
+    margin: 0 0 -6% 0;
+  }
+
+  .logo h1 {
+    font-size: 8.5em;
   }
 
   .main-nav ul {
@@ -657,5 +678,45 @@ Tablet, Small Laptop Styles
 
   .main-nav a {
     padding: 0;
+  }
+
+  .main-nav li a:hover,
+  .main-nav li a:focus,
+  .active a {
+    padding: 10%;
+  }
+
+  /**********************
+  Home Page Styles
+  **********************/
+
+  .home {
+    flex: 2;
+  }
+
+  .signup {
+    flex: 1;
+  }
+
+  #subscribe-email {
+    width: 100%;
+  }
+
+  /*********************
+  Concert Styles
+  *********************/
+
+  .concerts {
+      display: flex;
+  }
+
+  .table {
+    flex: 2;
+  }
+
+  .concerts aside {
+    flex: 2;
+    margin-top: 0;
+    font-size: 1.25em;
   }
 }
