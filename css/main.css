@@ -435,6 +435,10 @@ Tablet, Small Laptop Styles
     font-size: 1.15em;
   }
 
+  .main-nav a {
+    padding: 0;
+  }
+
   .main-nav li:hover,
   .main-nav li:focus,
   .active {
@@ -508,12 +512,23 @@ Home Page
 *******************/
   .content {
     display: flex;
+    flex-direction: row;
     margin: 5% 0 2% 0;
+  }
+
+  .home {
+    margin: 0 2% 0 0;
+    flex: 1;
+  }
+
+  .home h2 {
+    margin-top: 1%;
   }
 
   .signup {
     margin-top: 1%;
     padding: 3%;
+    flex: 1;
   }
 
   .signup h3 {
@@ -530,13 +545,6 @@ Home Page
     border-radius: 3px;
   }
 
-  .home {
-    margin: 0 2% 0 0;
-  }
-
-  .home h2 {
-    margin-top: 1%;
-  }
 
   /*********************
   About
@@ -639,7 +647,7 @@ form {
 }
 
 /*************************
-Laptop/Desktop Styles
+Laptop/Small Desktop Styles
 *************************/
 
 @media (min-width: 999px) {
@@ -689,6 +697,10 @@ Laptop/Desktop Styles
   /******************
   Footer Styles
   ******************/
+  .bottom-nav ul {
+    padding-bottom: 0;
+  }
+
   .social-media {
     padding: 0;
   }

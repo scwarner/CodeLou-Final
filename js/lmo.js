@@ -9,7 +9,7 @@ var hireCheckBox = document.getElementById('hire');
 var hireField = document.getElementById('hire-field')
 
 //Reveals search bar when search button is clicked
-searchButton.addEventListener('click', () => {
+searchButton.addEventListener('click', function () {
     if (searchBar.classList.contains('hideme')) {
     searchBar.classList.remove('hideme');
   } else {
@@ -23,15 +23,15 @@ searchButton.addEventListener('click', () => {
 });
 
 //Reveals form questions regarding joining LMO when clicked
-joinCheckBox.addEventListener('click', () => {
+joinCheckBox.addEventListener('click', function () {
   joinField.style.display = 'block';
 });
 
 //Reveals donation information when user clicks checkbox
-giveCheckBox.addEventListener('click', () => {
+giveCheckBox.addEventListener('click', function () {
   giveField.style.display = 'block';
 });
 
-hireCheckBox.addEventListener('click', () => {
+hireCheckBox.addEventListener('click', function () {
   hireField.style.display = 'block';
 });
