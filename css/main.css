@@ -319,6 +319,11 @@ tbody tr:nth-child(even) {
   display: none;
 }
 
+.clicked {
+  background-color: #fff;
+  color: #000;
+}
+
 .free-shows,
 .local-shows {
   color: rgba(206,98,66,1);
