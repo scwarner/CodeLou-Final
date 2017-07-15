@@ -19,7 +19,7 @@
         <div class="top-nav">
           <input type="text" id="search-bar" class="hideme" name="search-bar" placeholder="Search">
           <button id="search-button"><i class="fa fa-search" aria-hidden="true" title="Search"></i></button>
-          <a href="members.html"><i class="fa fa-user" aria-hidden="true" title="Members area"></i></a>
+          <i class="fa fa-user" aria-hidden="true" title="Members area"></i>
         </div>
         <div class="logo">
           <a href="index.html"><h1>LMO</h1>
@@ -42,19 +42,24 @@
         <main class="main contact">
           <div class="intro">
             <h2>Get in Touch</h2>
-            <p>We would love to hear from you. The best way is to fill out the form below. We will respond within the next business day. If you prefer to contact us the old-fashioned way, send correspondence to P.0. Box 55, Louisville, KY, 40201 </p>
+            <p>We would love to hear from you. The best way is to fill out the form on this page. We will do our best to respond within the next business day. Here are other ways to reach us:</p>
+            <h3>Mail</h3>
+            <p>P.0. Box XX<br>
+            Louisville, KY, 40201</p>
+            <h3>Phone</h3>
+            <p>502.XXX.XXXX</p>
           </div>
       <!-- BEGIN FORM -->
 
           <form class="contact-form">
             <fieldset>
-            <h3>Contact information</h3>
-            <label for="name">Name<span>*</span></label>
-            <input type="text" name="name" id="name" placeholder="Name" required>
-            <label for="email">Email<span>*</span></label>
-            <input type="text" name="email" id="email" placeholder="Email address" required>
-            <label for="confirm-email">Confirm email<span>*</span></label>
-            <input type="text" name="email" id="confirm-email" placeholder="Confirm email address" required>
+              <legend>Contact information</legend>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Name">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" placeholder="Email address">
+              <label for="confirm-email">Confirm email</label>
+              <input type="text" name="email" id="confirm-email" placeholder="Confirm email address">
             </fieldset>
             <fieldset>
             <input type="checkbox" name="join" id="join"><label for="join">I'd like to join the LMO</label>
@@ -76,7 +81,7 @@
             </fieldset>
             <fieldset>
               <input type="checkbox" name="give" id="give"><label for="give">I'd like to donate to the LMO</label>
-              <p id="donation-field">The Louisville Mandolin Orchestra is a 501c(3) organization and relies on charitable funding. Mail your tax-deductible contribution to P.O. Box 55, Louisville, KY 40201</p>
+              <p id="donation-field">The Louisville Mandolin Orchestra is a 501c(3) organization and relies on charitable funding. Mail your tax-deductible contribution to P.O. Box XX, Louisville, KY 40201</p>
             </fieldset>
             <fieldset>
               <input type="checkbox" name="hire" id="hire"><label for="hire">I'd like to hire the LMO</label>
@@ -86,7 +91,7 @@
             </div>
             </fieldset>
             <fieldset>
-              <h3>Comments</h3>
+              <legend>Comments</legend>
               <textarea></textarea>
             </fieldset>
             <fieldset>

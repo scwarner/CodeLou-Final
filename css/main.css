@@ -9,19 +9,19 @@ body {
 }
 
 a {
-  color: #6f1e0b;
+  color: #9d3a1d;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #6f1e0b;
+  color: #9d3a1d;
 }
 
 h3 {
   font-size: 20px;
-  color: #6f1e0b;
+  color: #9d3a1d;
 }
 
 /**************
@@ -41,17 +41,17 @@ Header Styles
 .fa-user {
   margin-left: .5em;
   font-size: 1.75em;
-  color: #6f1e0b;
+  color: #9d3a1d;
 }
 
 #search-button {
-  background-color: #6f1e0b;
+  background-color: #9d3a1d;
   color: #fff;
   border: none;
 }
 
 #search-bar {
-  border: 1px solid #6f1e0b;
+  border: 1px solid #9d3a1d;
   padding: 1%;
   margin-bottom: 0;
 }
@@ -61,7 +61,7 @@ Header Styles
 }
 
 .logo {
-  color: #6f1e0b;
+  color: #9d3a1d;
   text-align: center;
   margin: 0 0 2% 0;
   padding-bottom: .25em;
@@ -83,7 +83,7 @@ Header Styles
 
 .logo a:focus,
 .logo a:hover {
-  color: #6f1e0b;
+  color: #9d3a1d;
   text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ Header Styles
   padding: 3% 5%;
   text-align: center;
   line-height: 1.25;
-  border: 2px solid #6f1e0b;
+  border: 2px solid #9d3a1d;
   margin: 2% 10%;
   border-radius: 7px;
 }
@@ -108,7 +108,7 @@ Header Styles
 .active {
   font-weight: bold;
   color: #fff;
-  background-color: #d59e6a/*#ea5532*/;
+  background-color: #ce6242;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px 1px #080808;
 }
@@ -130,21 +130,22 @@ Main Content Styles
 .wrapper {
   max-width: 90%;
   margin: 0 auto;
+  margin-bottom: 5%;
 }
 
 .main {
-  margin: 0 2% 10% 2%;
+  margin: 0 2%;
 }
 
 h2 {
-  color: #6f1e0b;
+  color: #9d3a1d;
 }
 
 /****************************
 Footer Styles
 *****************************/
 footer {
-  background-color: #6f1e0b;
+  background-color: #9d3a1d;
   color: #fff;
   padding: 5%;
   margin: 0;
@@ -166,6 +167,10 @@ footer {
   padding: 4%;
 }
 
+.bottom-nav li:hover {
+  font-weight: 700;
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
@@ -177,15 +182,7 @@ footer {
 .social-media a {
   color: #fff;
   font-size: 1.5em;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  padding: 3% 5%;
-}
-
-.social-media a:hover,
-.social-media a:focus {
-  background-color: #d59e6a;
-  border: 1px solid #6f1e0b;
+  padding: 5%;
 }
 
 footer p {
@@ -208,7 +205,7 @@ Home Page
 .signup {
   margin-bottom: 8%;
   padding: 2% 5% 5% 5%;
-  background-color: #d59e6a;
+  background-color: rgba(206,98,66,0.9)
 }
 
 .signup h3 {
@@ -219,16 +216,16 @@ Home Page
 
 #subscribe-email {
   padding: 1%;
-  border: 1px solid #6f1e0b;
+  border: 1px solid #9d3a1d;
 }
 
 #subscribe-button {
   margin-left: 0;
   margin-top: 2%;
   padding: 1% 2%;
-  background: #6f1e0b;
+  background: inherit;
+  border: 2px solid #fff;
   color: #fff;
-  border: 0;
   font-weight: 700;
 }
 
@@ -252,12 +249,12 @@ About Page
 
 .about h3 {
   font-size: 20px;
-  color: #6f1e0b;
+  color: #9d3a1d;
 }
 
 hr {
   border-style: solid;
-  border-color: #6f1e0b;
+  border-color: #9d3a1d;
   border-width: 1px 0 0 0;
 }
 
@@ -280,11 +277,11 @@ table {
 
 caption {
   font-size: 2em;
-  color: #6f1e0b;
+  color: #9d3a1d;
 }
 
 tbody {
-    border: 1px solid #6f1e0b;
+    border: 1px solid #9d3a1d;
 }
 
 td,
@@ -294,7 +291,7 @@ th {
 }
 
 th {
-  background-color: #6f1e0b;
+  background-color: #9d3a1d;
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
@@ -310,11 +307,11 @@ th:last-child {
 }
 
 tbody tr {
-  border-bottom: 1px solid #6f1e0b;
+  border-bottom: 1px solid #9d3a1d;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #d59e6a;
+  background-color: rgba(206,98,66,1);
   color: #fff;
 }
 
@@ -324,9 +321,9 @@ tbody tr:nth-child(even) {
 
 .free-shows,
 .local-shows {
-  color: #fff;
-  background-color: #6f130b;
-  border: 1px solid #6f130b
+  color: rgba(206,98,66,1);
+  background-color: #fff;
+  border: 1px solid rgba(206,98,66,1);
   padding: 3%;
   border-radius: 5px;
 }
@@ -336,7 +333,7 @@ tbody tr:nth-child(even) {
 }
 
 .concerts aside {
-  margin-top: 10%;
+  margin: 5% 0;
 }
 
 /*****************************************
@@ -347,8 +344,8 @@ CONTACT PAGE
 }
 
 form {
-  background: rgba(213,158,106,0.8);
-  border-radius: 5px;
+  background: rgba(206,98,66,0.8);
+  border-radius: 3px;
   padding: 2%;
 }
 
@@ -368,14 +365,16 @@ input[type="radio"] {
   margin-right: 2%;
 }
 
-label {
-  color: #6f1e0b;
-  font-weight: 400;
-  font-size: 1.15em;
+legend {
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #fff;
 }
 
-.contact h3 {
-  font-weight: 700;
+label {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.15em;
 }
 
 .contact span {
@@ -400,17 +399,17 @@ textarea {
 }
 
 #submit-button {
-  background-color: inherit;
-  color: #6f1e0b;
-  border: 2px solid #6f1e0b;
+  background-color: rgba(206,98,66,0.8);
+  color: #fff;
+  border: 2px solid #fff;
   padding: 3%;
   border-radius: 5px;
 }
 
 #submit-button:hover,
 #submit-button:focus {
-  background-color: #6f1e0b;
-  color: #fff;
+  background-color: #fff;
+  color: #ce6242;
   font-weight:700;
 }
 
@@ -443,7 +442,7 @@ Tablet, Small Laptop Styles
   .main-nav li:focus,
   .active {
     background: #fff;
-    color: #d59e6a;
+    color: rgba(206,98,66,1);
     box-shadow: none;
     text-shadow: none;
   }
@@ -451,8 +450,8 @@ Tablet, Small Laptop Styles
   .main-nav li a:hover,
   .main-nav li a:focus,
   .active a {
-    color: #d59e6a;
-    border: 1px solid #6f1e0b;
+    color: rgba(206,98,66,1);
+    border: 1px solid #9d3a1d;
     border-radius: 3px;
     padding: 10%;
   }
@@ -554,7 +553,7 @@ Home Page
   }
 
   #mission {
-    background-color: #d59e6a;
+    background-color: rgba(206,98,66,0.8);
     padding: 1% 3%;
     margin: 20px 0;
     flex: 1;
@@ -619,17 +618,22 @@ tbody {
   margin-right: 1%;
 }
 
-.hire {
+.concerts aside {
   margin: 5% 0;
 }
 
-.hire h3 {
+.concerts aside h3 {
   font-size: 24px;
+  font-weight: 700;
 }
 
 /************************
 Contact
 ************************/
+.contact {
+  margin-bottom: 5%;
+}
+
 .intro {
   margin-bottom: 5%;
 }
@@ -650,7 +654,7 @@ form {
 Laptop/Small Desktop Styles
 *************************/
 
-@media (min-width: 999px) {
+@media (min-width: 1020px) {
 
   /********************
   Header Styles
@@ -680,6 +684,10 @@ Laptop/Small Desktop Styles
     font-size: 8.5em;
   }
 
+  .main-nav {
+    border-bottom: 5px solid #9d3a1d;
+  }
+
   .main-nav ul {
     justify-content: flex-end;
   }
@@ -701,13 +709,13 @@ Laptop/Small Desktop Styles
     padding-bottom: 0;
   }
 
-  .social-media {
-    padding: 0;
+  .bottom-nav li {
+    font-size: 1.25em;
   }
 
   .social-media a {
-    padding: 2%;
-    padding-bottom: 0;
+    font-size: 1.5em;
+    padding: 3%;
   }
 
   /*******************
@@ -715,6 +723,7 @@ Laptop/Small Desktop Styles
   *******************/
   .wrapper {
     width: 80%;
+    margin-bottom: 2.5%;
   }
 
   /**********************
@@ -776,5 +785,51 @@ Laptop/Small Desktop Styles
 
   .intro h2 {
     margin-top: 0;
+  }
+}
+
+/*************************
+Laptop and Desktop Styles
+*************************/
+
+@media (min-width: 1250px) {
+
+/********************
+Header Styles
+********************/
+  .logo {
+    margin: 0 0 -5% 0;
+  }
+
+  .logo h1 {
+    font-size: 9em;
+  }
+
+  .logo p {
+    font-size: 1.15em;
+  }
+
+  .main-nav li {
+    font-size: 1.25em;
+  }
+
+  /********************
+  Main Content Styles
+  ********************/
+  .wrapper {
+    width: 75%;
+    max-width: 1000px;
+    margin-bottom: 2%;
+  }
+
+  /********************
+  Footer Styles
+  ********************/
+  .bottom-nav li {
+    padding-bottom: 1%;
+  }
+
+  .social-media {
+    padding-bottom: 1%;
   }
 }
