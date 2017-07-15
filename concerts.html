@@ -19,7 +19,7 @@
     <div class="top-nav">
       <input type="text" id="search-bar" class="hideme" name="search-bar" placeholder="Search">
       <button id="search-button"><i class="fa fa-search" aria-hidden="true" title="Search"></i></button>
-      <i class="fa fa-user" aria-hidden="true" title="Members area"></i>
+      <i class="fa fa-user" aria-hidden="true" title="Members area" data-toggle="modal" data-target="#memberModal"></i>
     </div>
     <div class="logo">
       <a href="index.html"><h1>LMO</h1>
@@ -130,6 +130,24 @@
   </div>
 
   <!-- END MAIN CONTENT -->
+
+  <!-- BEGIN MEMBER BUTTON MODAL -->
+
+  <div class="modal fade" id="memberModal" role="dialog" aria-labelledby="buttonModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Members Only</h4>
+        </div>
+        <div class="modal-body">
+          <p>Members area under construction. Please check back later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MEMBER BUTTON MODAL -->
 
   <!-- BEGIN FOOTER -->
 

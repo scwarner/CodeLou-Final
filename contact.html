@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css">
   </head>
-    <body>
+  <body>
 
       <!-- BEGIN HEADER -->
 
@@ -19,7 +19,7 @@
         <div class="top-nav">
           <input type="text" id="search-bar" class="hideme" name="search-bar" placeholder="Search">
           <button id="search-button"><i class="fa fa-search" aria-hidden="true" title="Search"></i></button>
-          <i class="fa fa-user" aria-hidden="true" title="Members area"></i>
+          <i class="fa fa-user" aria-hidden="true" title="Members area" data-toggle="modal" data-target="#memberModal"></i>
         </div>
         <div class="logo">
           <a href="index.html"><h1>LMO</h1>
@@ -58,8 +58,6 @@
               <input type="text" name="name" id="name" placeholder="Name">
               <label for="email">Email</label>
               <input type="text" name="email" id="email" placeholder="Email address">
-              <label for="confirm-email">Confirm email</label>
-              <input type="text" name="email" id="confirm-email" placeholder="Confirm email address">
             </fieldset>
             <fieldset>
             <input type="checkbox" name="join" id="join"><label for="join">I'd like to join the LMO</label>
@@ -100,6 +98,26 @@
           </form>
 
           <!-- END FORM -->
+
+          <!-- BEGIN MEMBER BUTTON MODAL -->
+
+          <div class="modal fade" id="memberModal" role="dialog" aria-labelledby="buttonModalLabel">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Members Only</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Members area under construction. Please check back later.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- END MEMBER BUTTON MODAL -->
+
+
 
           <!-- BEGIN SUBMIT BUTTON MODAL -->
 
@@ -150,5 +168,8 @@
       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="js/lmo.js"></script>
+      <script src="js/contact.js" type="text/javascript">
+
+      </script>
   </body>
 </html>
