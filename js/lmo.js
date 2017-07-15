@@ -1,6 +1,8 @@
 
 var searchButton = document.getElementById('search-button');
 var searchBar = document.getElementById('search-bar');
+var subscribeBar =document.getElementById('subscribe-email');
+var subscribeButton = document.getElementById('subscribe-button');
 var joinCheckBox = document.getElementById('join');
 var joinField = document.getElementById('join-field');
 var giveCheckBox = document.getElementById('give');
@@ -24,6 +26,16 @@ searchButton.addEventListener('click', function () {
    alert("Sorry! Search function has not been implemented.");
    searchBar.value = '';
  }
+});
+
+/************
+HOME PAGE
+************/
+//Removes text entered in email input when button is clicked
+subscribeButton.addEventListener('click', function () {
+  if (subscribeBar.value !== '') {
+    subscribeBar.value = '';
+  }
 });
 
 /************
