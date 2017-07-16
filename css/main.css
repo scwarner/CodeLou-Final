@@ -674,6 +674,11 @@ Laptop/Small Desktop Styles
     margin-left: .25em;
   }
 
+  #search-bar {
+    max-width: 50%;
+    padding: 0 0 0 1%;
+  }
+
   .main-header {
     margin: 5em;
     margin-bottom: 2.5em;
