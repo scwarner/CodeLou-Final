@@ -59,9 +59,10 @@
               <label for="email">Email</label>
               <input type="text" name="email" id="email" placeholder="Email address">
             </fieldset>
+
             <fieldset>
             <input type="checkbox" name="join" id="join"><label for="join">I'd like to join the LMO</label>
-            <div id="join-field">
+            <div id="join-field" class="hideme">
               <label for="instrument">Instrument played:</label>
               <select class="instrument" name="instrument-played" id="instrument">
                 <option value="mandolin">Mandolin</option>
@@ -77,21 +78,25 @@
               <input type="radio" name="years" value="<10" id="over-10"><label for="over-10">More than 10</label>
             </div>
             </fieldset>
+
             <fieldset>
               <input type="checkbox" name="give" id="give"><label for="give">I'd like to donate to the LMO</label>
-              <p id="donation-field">The Louisville Mandolin Orchestra is a 501c(3) organization and relies on charitable funding. Mail your tax-deductible contribution to P.O. Box XX, Louisville, KY 40201</p>
+              <p id="donation-field" class="hideme">The Louisville Mandolin Orchestra is a 501c(3) organization and relies on charitable funding. Mail your tax-deductible contribution to P.O. Box XX, Louisville, KY 40201</p>
             </fieldset>
+
             <fieldset>
               <input type="checkbox" name="hire" id="hire"><label for="hire">I'd like to hire the LMO</label>
-              <div id="hire-field">
+              <div id="hire-field" class="hideme">
                 <p>List details below, including requested time, date and venue.</p>
                 <textarea></textarea>
             </div>
             </fieldset>
+
             <fieldset>
               <legend>Comments</legend>
               <textarea></textarea>
             </fieldset>
+
             <fieldset>
               <button type="button" name="button" id="submit-button" data-toggle="modal" data-target="#buttonModal">Submit</button>
             </fieldset>
