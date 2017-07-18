@@ -1,14 +1,7 @@
 
 var searchButton = document.getElementById('search-button');
 var searchBar = document.getElementById('search-bar');
-//var subscribeBar =document.getElementById('subscribe-email');
-//var subscribeButton = document.getElementById('subscribe-button');
-var joinCheckBox = document.getElementById('join');
-var joinField = document.getElementById('join-field');
-var giveCheckBox = document.getElementById('give');
-var giveField = document.getElementById('donation-field');
-var hireCheckBox = document.getElementById('hire');
-var hireField = document.getElementById('hire-field')
+
 
 /***********
 ALL PAGES
@@ -28,15 +21,6 @@ searchButton.addEventListener('click', function () {
  }
 });
 
-/************
-HOME PAGE
-************/
-//Removes text entered in email input when button is clicked
-/*subscribeButton.addEventListener('click', function () {
-  if (subscribeBar.value !== '') {
-    subscribeBar.value = '';
-  }
-});*/
 
 /************
 CONCERTS PAGE
@@ -44,33 +28,22 @@ CONCERTS PAGE
 
 //When 'Free Shows Only' button is clicked, filters table to show rows with free concerts
 $('.free-shows').on('click', function () {
-    $('.ticket').toggleClass('hideme');
-    $('tbody tr:nth-child(even)').toggleClass('clicked');
-    //$('tbody tr:nth-child(even)').css('background-color', 'white');
-    //$('tbody tr:nth-child(even)').css('color', '#000');
-})
+    $('.ticket').addClass('hideme');
+    $('tbody tr:nth-child(even)').css('background-color', '#fff');
+    $('tbody tr:nth-child(even)').css('color', '#333');
+});
 
 //When 'Local Shows Only' button is clicked, filters table to show rows with local concerts
 $('.local-shows').on('click', function () {
-  $('.away').toggleClass('hideme');
-})
-
-
-/************
-CONTACT PAGE
-************/
-
-//Reveals form questions regarding joining LMO when clicked
-/*joinCheckBox.addEventListener('click', function () {
-  joinField.style.display = 'block';
+  $('.away').addClass('hideme');
+  $('tbody tr:nth-child(even)').css('background-color', '#fff');
+  $('tbody tr:nth-child(even)').css('color', '#333');
 });
 
-//Reveals donation information when user clicks checkbox
-giveCheckBox.addEventListener('click', function () {
-  giveField.style.display = 'block';
+//When "All Shows" button is clicked, all rows are revealed
+$('.all-shows').on('click', function () {
+  $('.ticket').removeClass('hideme');
+  $('.away').removeClass('hideme');
+  $('tbody tr:nth-child(even)').css('background-color', 'rgba(206,98,66,1)');
+  $('tbody tr:nth-child(even)').css('color', '#fff');
 });
-
-hireCheckBox.addEventListener('click', function () {
-  hireField.style.display = 'block';
-});
-*/
