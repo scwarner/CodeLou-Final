@@ -113,9 +113,14 @@
             </tr>
           </tbody>
         </table>
-        <button type="button" name="button" class="free-shows">Free Shows Only</button>
+        <!-- <button type="button" name="button" class="free-shows">Free Shows Only</button>
         <button type="button" name="button" class="local-shows">Local Shows Only</button>
-        <button type="button" name="button" class="all-shows">All Shows</button>
+        <button type="button" name="button" class="all-shows">All Shows</button> -->
+        <div class="show-filter">
+          <input type="radio" name="filter" class="free-shows" id="no-cost" value=""><label for="no-cost">Free Shows</label>
+          <input type="radio" name="filter" class="local-shows" id="home" value=""><label for="home">Local Shows</label>
+          <label for="all"><input type="radio" name="filter" class="all-shows" id="all" value="">All Shows</label>
+        </div>
         </div>
 
       <!-- END TABLE -->

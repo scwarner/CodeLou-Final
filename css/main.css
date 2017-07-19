@@ -325,29 +325,19 @@ tbody tr:nth-child(even) {
   display: none;
 }
 
-.free-shows,
-.local-shows,
-.all-shows {
-  color: rgba(206,98,66,1);
-  background-color: #fff;
-  border: 1px solid rgba(206,98,66,1);
-  padding: 3%;
-  border-radius: 5px;
+.show-filter {
+  text-align: center;
 }
 
-.free-shows:hover,
-.free-shows:focus,
-.local-shows:hover,
-.local-shows:focus,
-.all-shows:hover,
-.all-shows:focus {
-  background-color: rgba(206,98,66,1);
-  color: #fff;
+.concerts input[type='radio'] {
+  margin-right: 5px;
+  border: 1px solid #333;
 }
 
-.free-shows {
-  margin-right: 3%;
+.concerts label {
+  margin-right: 5px;
 }
+
 
 .concerts aside {
   margin: 5% 0;
@@ -377,8 +367,8 @@ input[type="text"] {
   margin-bottom: 2%;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+.contact input[type="checkbox"],
+.contact input[type="radio"] {
   margin-right: 2%;
 }
 
@@ -388,7 +378,7 @@ legend {
   color: #fff;
 }
 
-label {
+.contact label {
   color: #333;
   font-weight: 400;
   font-size: 1.15em;
