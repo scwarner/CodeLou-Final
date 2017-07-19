@@ -44,6 +44,6 @@ $('.local-shows').on('click', function () {
 $('.all-shows').on('click', function () {
   $('.ticket').removeClass('hideme');
   $('.away').removeClass('hideme');
-  $('tbody tr:nth-child(even)').css('background-color', 'rgba(206,98,66,1)');
+  $('tbody tr:nth-child(even)').css('background-color', '#9a4932');
   $('tbody tr:nth-child(even)').css('color', '#fff');
 });
