@@ -1,9 +1,13 @@
+var nameInput = document.getElementById('name');
+var emailInput = document.getElementById('email')
 var joinCheckBox = document.getElementById('join');
 var joinField = document.getElementById('join-field');
 var giveCheckBox = document.getElementById('give');
 var giveField = document.getElementById('donation-field');
 var hireCheckBox = document.getElementById('hire');
-var hireField = document.getElementById('hire-field')
+var hireField = document.getElementById('hire-field');
+var textField = document.getElementById('text-field');
+var submitButton = document.getElementById('submit-button');
 
 /************
 CONTACT PAGE
@@ -37,4 +41,17 @@ hireCheckBox.addEventListener('click', function () {
   hireField.classList.add('hideme');
 }
 
+});
+
+//Removes text entered in inputs and textarea when button is clicked
+submitButton.addEventListener('click', function () {
+  if (nameInput.value !== '') {
+    nameInput.value = '';
+  }
+  if (emailInput.value !== '') {
+    emailInput.value = '';
+  }
+  if (textField.value !== '') {
+    textField.value = '';
+  }
 });

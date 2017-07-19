@@ -675,7 +675,6 @@ Laptop/Small Desktop Styles
   }
 
   .main-header {
-    margin: 5em;
     margin-bottom: 3em;
   }
 
@@ -720,7 +719,7 @@ Laptop/Small Desktop Styles
 
   .social-media a {
     font-size: 1.5em;
-    padding: 3%;
+    padding: 2%;
   }
 
   /*******************
