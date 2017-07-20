@@ -12,4 +12,4 @@ I also added the following interactive features:
 * Buttons on the Concerts page that allow users to filter the information displayed in the Concerts table
 * A form on the Contact page that includes checkboxes that display information when clicked
 
-While I have Bootstrap included on the pages for the modal windows, I used CSS flexbox to lay out the pages in attempt to apply the knowledge I gained from my Code Louisville classes. As is apparent, the results are somewhat mixed, especially on Firefox. The site is best viewed in Chrome or IE.
+While I have Bootstrap included on the pages for the modal windows, I used CSS flexbox to lay out the pages in attempt to apply the knowledge I gained from my Code Louisville classes. It has been a learning experience, as I've discovered that flexbox properties display a little differently on Firefox and IE as they do in Chrome.

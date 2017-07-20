@@ -3,7 +3,10 @@ UNIVERSAL STYLES
 ***********************/
 
 body {
+/*  display: flex;
+  flex-direction: column;*/
   margin: 0;
+/*  min-height: 100vh;*/
   font-size: 16px;
   font-family: 'Open-Sans', sans-serif;
 }
@@ -129,6 +132,7 @@ Main Content Styles
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 5%;
+/*  flex: 1 0 auto;*/
 }
 
 .main {
@@ -469,6 +473,7 @@ Tablet, Small Laptop Styles
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 1%;
   }
 
   .bottom-nav {
@@ -698,9 +703,10 @@ Laptop/Small Desktop Styles
   }
 
   .main-nav ul {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
+  .main-nav li,
   .main-nav a {
     padding: 0 5%;
   }
@@ -749,6 +755,10 @@ Laptop/Small Desktop Styles
 
   #subscribe-email {
     width: 100%;
+  }
+
+  #subscribe-button {
+    padding: 3%;
   }
 
   /*********************
@@ -827,7 +837,6 @@ Header Styles
 
   .main-nav li {
     font-size: 1.25em;
-    padding: 0 2%;
   }
 
   /********************
@@ -848,5 +857,16 @@ Header Styles
 
   .social-media {
     padding-bottom: 1%;
+  }
+
+  /********************
+  Home Page Styles
+  *********************/
+  .signup h3 {
+    margin-top: 10px;
+  }
+
+  #subscribe-button {
+    margin: 3% 0;
   }
 }
