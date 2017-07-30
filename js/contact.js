@@ -44,14 +44,9 @@ hireCheckBox.addEventListener('click', function () {
 });
 
 //Removes text entered in inputs and textarea when button is clicked
-submitButton.addEventListener('click', function () {
-  if (nameInput.value !== '') {
-    nameInput.value = '';
-  }
-  if (emailInput.value !== '') {
-    emailInput.value = '';
-  }
-  if (textField.value !== '') {
-    textField.value = '';
-  }
+submitButton.addEventListener('click', function (e) {
+  e.preventDefault();
+      nameInput.value = '';
+      emailInput.value = '';
+      textField.value = '';
 });

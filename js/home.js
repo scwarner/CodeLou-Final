@@ -5,8 +5,7 @@ var subscribeButton = document.getElementById('subscribe-button');
 HOME PAGE
 ************/
 //Removes text entered in email input when button is clicked
-subscribeButton.addEventListener('click', function () {
-  if (subscribeBar.value !== '') {
+subscribeButton.addEventListener('click', function (e) {
+    e.preventDefault();
     subscribeBar.value = '';
-  }
 });
