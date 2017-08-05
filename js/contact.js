@@ -14,8 +14,8 @@ CONTACT PAGE
 ************/
 
 //Reveals form questions regarding joining LMO when clicked
-joinCheckBox.addEventListener('click', function () {
-  if (joinField.classList.contains('hideme')) {
+joinCheckBox.addEventListener('change', function () {
+  if (joinCheckBox.checked) {
   joinField.classList.remove('hideme');
 } else {
   joinField.classList.add('hideme');
@@ -24,8 +24,8 @@ joinCheckBox.addEventListener('click', function () {
 });
 
 //Reveals donation information when user clicks checkbox
-giveCheckBox.addEventListener('click', function () {
-  if (giveField.classList.contains('hideme')) {
+giveCheckBox.addEventListener('change', function () {
+  if (giveCheckBox.checked) {
   giveField.classList.remove('hideme');
 } else {
   giveField.classList.add('hideme');
@@ -34,8 +34,8 @@ giveCheckBox.addEventListener('click', function () {
 });
 
 //Reveals text area for hiring information when user clicks checkbox
-hireCheckBox.addEventListener('click', function () {
-  if (hireField.classList.contains('hideme')) {
+hireCheckBox.addEventListener('change', function () {
+  if (hireCheckBox.checked) {
   hireField.classList.remove('hideme');
 } else {
   hireField.classList.add('hideme');
