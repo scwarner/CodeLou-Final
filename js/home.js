@@ -1,4 +1,4 @@
-var subscribeBar =document.getElementById('subscribe-email');
+var subscribeBar = document.getElementById('subscribe-email');
 var subscribeButton = document.getElementById('subscribe-button');
 
 /************

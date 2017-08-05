@@ -13,34 +13,29 @@ var submitButton = document.getElementById('submit-button');
 CONTACT PAGE
 ************/
 
-//Reveals form questions regarding joining LMO when clicked
-joinCheckBox.addEventListener('change', function () {
-  if (joinCheckBox.checked) {
-  joinField.classList.remove('hideme');
-} else {
-  joinField.classList.add('hideme');
+//Function reveals or hides a certain field on the contact form depending on whether or not a checkbox is clicked
+function changeFieldDisplay (checkboxName, field) {
+  if (checkboxName.checked) {
+    field.classList.remove('hideme');
+  } else {
+    field.classList.add('hideme');
+  }
+  return changeFieldDisplay;
 }
 
+//Reveals form questions regarding joining LMO when clicked
+joinCheckBox.addEventListener('change', function () {
+  changeFieldDisplay(joinCheckBox, joinField);
 });
 
 //Reveals donation information when user clicks checkbox
 giveCheckBox.addEventListener('change', function () {
-  if (giveCheckBox.checked) {
-  giveField.classList.remove('hideme');
-} else {
-  giveField.classList.add('hideme');
-}
-
+  changeFieldDisplay(giveCheckBox,giveField);
 });
 
 //Reveals text area for hiring information when user clicks checkbox
 hireCheckBox.addEventListener('change', function () {
-  if (hireCheckBox.checked) {
-  hireField.classList.remove('hideme');
-} else {
-  hireField.classList.add('hideme');
-}
-
+  changeFieldDisplay(hireCheckBox, hireField);
 });
 
 //Removes text entered in inputs and textarea when button is clicked
